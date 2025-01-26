@@ -1,13 +1,14 @@
 import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <header className="sticky top-0 container mx-auto px-15 mt-10">
+      <header className="sticky top-0 container px-15 mx-auto navbar">
         <nav
           aria-label="Global"
-          className="mx-auto flex max-w-7xl items-center justify-between"
+          className="mx-auto flex max-w-7xl items-center justify-between p-3"
         >
           <div>
             <a href="/" className="text-2xl font-bold">
@@ -51,15 +52,21 @@ function App() {
           className="grid md:grid-cols-3 sm:grid-cols-1 grid-rows-3 gap-4"
         >
           <div className="md:row-span-3 md:col-span-1 sm:row-span-1 sm:col-span-3 bg-white rounded-2xl flex flex-col items-center">
-            <div className="mt-10">
+            <div className="mt-5">
               <img
                 src="https://i.postimg.cc/m27MWMCY/sahmp.jpg"
                 alt="Alex Mejicanos"
                 className="h-50 w-50 rounded-full"
               />
             </div>
-            <div className="text-center p-10">
-              <h2 className="text-2xl font-bold">Alex Mejicanos</h2>
+            <div className="text-center p-5">
+              <motion.h2
+                className="text-2xl font-bold"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+              >
+                Alex Mejicanos
+              </motion.h2>
               <p className="text-sm mt-5">
                 I am a Software Enginner with a FullStack knowledge based in
                 Guatemala.
@@ -111,21 +118,45 @@ function App() {
             <div className="mt-2">
               <ul className="list-disc list-inside">
                 <li className="text-green-700 text-4xl">
-                  <span className="text-black text-base align-middle">
+                  <span className="text-black text-base align-middle ml-[-20px]">
                     Available for Freelancing
                   </span>
                 </li>
               </ul>
             </div>
-            <button className="bg-green-700 rounded pl-8 pr-8 pt-2 pb-2 text-white font-bold mt-3">
-              Download CSV
-            </button>
           </div>
           <div className="md:col-span-2 sm:row-span-1 sm:col-span-3 bg-white rounded-2xl">
-            asdf
+            <h4 className="text-xl p-7">
+              If you're looking for technical expertise, I'm here to help you to avoid commont mistakes. I have experience in the following technologies:
+            </h4>
           </div>
         </section>
-        <section id="services">Services</section>
+        <section id="services" className="bg-white rounded-2xl p-7 mt-5">
+          <h2 className="text-4xl font-bold">Services</h2>
+          <div className="grid md:grid-cols-3 sm:grid-cols-1 md:grid-rows-1 sm:grid-rows-3 gap-4 mt-5">
+            <div className="bg-gray-100 p-5 rounded-lg">
+              <h3 className="text-2xl font-bold">Web Development</h3>
+              <p className="text-base mt-5">
+                I can help you to build a website using the latest technologies
+                and trends.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-5 rounded-lg">
+              <h3 className="text-2xl font-bold">Mobile Development</h3>
+              <p className="text-base mt-5">
+                I can help you to build a mobile app using the latest
+                technologies and trends.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-5 rounded-lg">
+              <h3 className="text-2xl font-bold">UI/UX Design</h3>
+              <p className="text-base mt-5">
+                I can help you to design a website or mobile app using the
+                latest technologies and trends.
+              </p>
+            </div>
+          </div>
+        </section>
         <section id="works">Works</section>
         <section id="contact">Contact</section>
       </main>
