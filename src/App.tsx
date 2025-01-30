@@ -51,8 +51,9 @@ function App() {
           id="about"
           className="grid md:grid-cols-3 sm:grid-cols-1 grid-rows-3 gap-4"
         >
-          <div className="md:row-span-3 md:col-span-1 sm:row-span-1 sm:col-span-3 bg-white rounded-2xl flex flex-col items-center">
-            <div className="mt-5">
+          <div className="md:row-span-3 md:col-span-1 sm:row-span-1 sm:col-span-3 bg-white rounded-2xl">
+            <img src="https://i.postimg.cc/nLR9VcM1/LPK-4382.jpg" className="object-fill rounded-2xl"/>
+            {/* <div className="mt-10">
               <img
                 src="https://i.postimg.cc/m27MWMCY/sahmp.jpg"
                 alt="Alex Mejicanos"
@@ -72,7 +73,7 @@ function App() {
                 Guatemala.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-5">
               <ul className="list-none flex space-x-2">
                 <li>
                   <SocialIcon
@@ -107,14 +108,14 @@ function App() {
                   />
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="md:row-span-2 md:col-span-2 sm:row-span-1 sm:col-span-3 bg-white rounded-2xl p-7">
             <p className="text-base mb-5">Hello!</p>
-            <h2 className="text-4xl font-bold">
+            <h1 className="text-5xl font-bold">
               I'm Alex Mejicanos, I'm dedicated to help startups and companies
               turn their ideas into successful products.
-            </h2>
+            </h1>
             <div className="mt-2">
               <ul className="list-disc list-inside">
                 <li className="text-green-700 text-4xl">
