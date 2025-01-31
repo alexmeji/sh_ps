@@ -12,7 +12,7 @@ function App() {
         >
           <div>
             <a href="/" className="text-2xl font-bold">
-              Alex Mejicanos
+              Alex Mejicanos 2
             </a>
           </div>
           <div>
